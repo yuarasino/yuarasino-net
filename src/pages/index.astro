@@ -1,19 +1,13 @@
 ---
+import Body from "../layouts/Body.astro";
+
 const title = "yuarasino.net";
 const description = "新篠ゆうのウェブサイト";
 ---
 
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </head>
-  <body>
-    <main>
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </main>
-  </body>
-</html>
+<Body {title} {description}>
+  <main>
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </main>
+</Body>
