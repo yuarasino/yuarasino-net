@@ -2,6 +2,9 @@
   "version": "4",
   "specifiers": {
     "npm:@astrojs/tailwind@^5.1.2": "5.1.2_astro@4.16.14__@babel+core@7.26.0__vite@5.4.11__zod@3.23.8_tailwindcss@3.4.15__postcss@8.4.49_postcss@8.4.49",
+    "npm:@fontsource-variable/noto-sans-display@^5.1.0": "5.1.0",
+    "npm:@fontsource-variable/noto-sans-jp@^5.1.0": "5.1.0",
+    "npm:@fontsource-variable/noto-sans-mono@^5.1.0": "5.1.0",
     "npm:astro@^4.16.14": "4.16.14_@babel+core@7.26.0_vite@5.4.11_zod@3.23.8",
     "npm:tailwindcss@^3.4.15": "3.4.15_postcss@8.4.49"
   },
@@ -290,6 +293,15 @@
     },
     "@esbuild/win32-x64@0.21.5": {
       "integrity": "sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw=="
+    },
+    "@fontsource-variable/noto-sans-display@5.1.0": {
+      "integrity": "sha512-YM0t8bNS7TN+LfU+q9WWBsi4mzT0BnSVrwXgNmJLmeTqTWhl8+nFq6VnIb6YV+39son0nTzLumw30jiO1sGb1A=="
+    },
+    "@fontsource-variable/noto-sans-jp@5.1.0": {
+      "integrity": "sha512-VmEW0dlHsC0tQOlZlzcrUj+9HL73pANKneMrsZD8X6Jg3XhysOYY6R2VRGO4cTYwp5iVznt1crzGUEWM+/xQuA=="
+    },
+    "@fontsource-variable/noto-sans-mono@5.1.0": {
+      "integrity": "sha512-f0/eB/wignKzBfsHwcRzuLj5xfRYULYdZ0v3CgwJYgTpj2vm3vNFGkRFV4xiYgsUEOcHwVze1uVbctIMMBcyTQ=="
     },
     "@img/sharp-darwin-arm64@0.33.5": {
       "integrity": "sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==",
@@ -2647,6 +2659,9 @@
     "packageJson": {
       "dependencies": [
         "npm:@astrojs/tailwind@^5.1.2",
+        "npm:@fontsource-variable/noto-sans-display@^5.1.0",
+        "npm:@fontsource-variable/noto-sans-jp@^5.1.0",
+        "npm:@fontsource-variable/noto-sans-mono@^5.1.0",
         "npm:astro@^4.16.14",
         "npm:tailwindcss@^3.4.15"
       ]
