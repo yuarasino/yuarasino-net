@@ -1,3 +1,5 @@
+import { addIconSelectors } from "@iconify/tailwind";
+
 import type { Config } from "tailwindcss";
 
 const defineConfig = (config: Config): Config => config;
@@ -54,4 +56,7 @@ export default defineConfig({
       },
     },
   },
+  plugins: [
+    addIconSelectors(["fa6-solid", "fa6-brands"]),
+  ],
 });
