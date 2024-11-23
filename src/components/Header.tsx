@@ -9,9 +9,9 @@ export default defineComponent<HeaderProps>(() => {
   const dialog = createRef<HTMLDialogElement>();
 
   return (
-    <header class="fixed inset-0 h-16 font-display">
-      <nav class="flex justify-between">
-        <div class="flex p-2">
+    <header class="fixed inset-x-0 top-0 font-display">
+      <nav class="flex justify-between items-center h-16">
+        <div class="flex px-2">
           <a class="block p-2" href="/">
             <img
               class="h-8 w-auto"
@@ -20,7 +20,7 @@ export default defineComponent<HeaderProps>(() => {
             />
           </a>
         </div>
-        <div class="flex p-3 split:hidden">
+        <div class="flex px-3 split:hidden">
           <button class="block p-2" onClick={() => dialog.current?.show()}>
             <i class="block h-6 w-6 iconify fa6-solid--bars" />
           </button>
