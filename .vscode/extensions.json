@@ -1,6 +1,8 @@
 {
   "recommendations": [
     "seatonjiang.gitmoji-vscode",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "denoland.vscode-deno",
+    "astro-build.astro-vscode"
   ]
 }

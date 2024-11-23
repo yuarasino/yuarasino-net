@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "exclude": [
+    "node_modules/",
+    ".astro/",
+    "dist/"
+  ],
+  "unstable": [
+    "fmt-component"
+  ]
+}
