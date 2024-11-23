@@ -3,12 +3,12 @@ import "@fontsource-variable/noto-sans-jp";
 import "@fontsource-variable/noto-sans-display";
 import "@fontsource-variable/noto-sans-mono";
 
-interface Props {
+export type HtmlProps = {
   title: string;
   description: string;
-}
+};
 
-export type { Props as HtmlProps };
+interface Props extends HtmlProps {}
 
 const props = Astro.props;
 ---

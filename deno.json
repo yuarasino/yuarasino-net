@@ -11,5 +11,9 @@
   ],
   "unstable": [
     "fmt-component"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
 }
