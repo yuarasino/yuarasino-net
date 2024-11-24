@@ -4,9 +4,11 @@ export default defineComponent(() => {
   return (
     <footer class="bg-primary-300 text-white font-display">
       <div class="flex justify-center items-center h-16">
-        <p class="flex">
-          <span class="block p-2">&copy; 2025 新篠ゆう</span>
-        </p>
+        <div class="flex p-3">
+          <p class="p-2">
+            <span class="block">&copy; 2025 新篠ゆう</span>
+          </p>
+        </div>
       </div>
     </footer>
   );

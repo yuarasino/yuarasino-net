@@ -61,6 +61,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    addIconSelectors(["fa6-solid", "fa6-brands"]),
+    addIconSelectors([
+      "fa6-solid",
+      "fa6-brands",
+    ]),
   ],
 });

@@ -1,14 +1,19 @@
 ---
 import Body from "../layouts/Body.astro";
+import Prof from "../sections/Prof.tsx";
+import News from "../sections/News.tsx";
+import Spec from "../sections/Spec.tsx";
+import Work from "../sections/Work.tsx";
 
 const title = "yuarasino.net";
 const description = "新篠ゆうのウェブサイト";
 ---
 
 <Body {title} {description}>
-  <main class="min-h-screen pt-16">
-    <h1 class="text-primary-500">{title}</h1>
-    <p class="text-secondary-500">{description}</p>
-    <i class="iconify fa6-brands--x-twitter" />
+  <main class="min-h-screen">
+    <Prof />
+    <News />
+    <Spec />
+    <Work />
   </main>
 </Body>
