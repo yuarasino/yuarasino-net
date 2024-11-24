@@ -1,6 +1,7 @@
 ---
 import Html from "./Html.astro";
 import Header from "../components/Header.tsx";
+import Aside from "../components/Aside.tsx";
 import Footer from "../components/Footer.tsx";
 
 import type { HtmlProps } from "./Html.astro";
@@ -15,6 +16,7 @@ const props = Astro.props;
 <Html {...props}>
   <body>
     <Header client:load />
+    <Aside />
     <slot />
     <Footer />
   </body>
