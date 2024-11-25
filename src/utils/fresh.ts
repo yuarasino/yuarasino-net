@@ -1,9 +1,9 @@
 import { createDefine } from "fresh";
 
-export type State = {
+export interface State {
   title?: string;
   description?: string;
-};
+}
 
 const define = createDefine<State>();
 

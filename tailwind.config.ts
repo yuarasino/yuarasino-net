@@ -6,6 +6,10 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      screens: {
+        split: "960px",
+        clamp: "640px",
+      },
       fontFamily: {
         sans: "'Noto Sans JP', sans-serif",
         mono: "'Noto Sans Mono', 'Noto Sans JP', monospace",

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   header,
   dialog,
   footer,
@@ -12,6 +16,21 @@
   h4,
   h5,
   h6 {
-    font-family: theme("fontFamily.mono");
+    @apply font-mono;
+  }
+
+  dialog {
+    @apply size-auto;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply inline-block bg-current text-inherit [mask-size:100%_100%];
+  }
+
+  .dialog {
+    @apply block transition-transform duration-500 -translate-x-full
+      [&[open]]:translate-x-0;
   }
 }
