@@ -23,9 +23,7 @@ export default definePage(({ Component, state }) => {
         />
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body>
-        <Component />
-      </body>
+      <Component />
     </html>
   );
 });
