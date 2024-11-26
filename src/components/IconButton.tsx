@@ -1,4 +1,5 @@
 import { defineComponent } from "../utils/preact.ts";
+import { tw } from "../utils/tailwind.ts";
 import Icon from "./Icon.tsx";
 
 import type { ComponentProps } from "preact";
@@ -14,11 +15,15 @@ export default defineComponent<IconButtonProps>((
   return (
     <button
       {...props}
-      class={`inline-block ${class_}`}
+      class={tw`
+        inline-block
+        hover:opacity-75
+        ${class_}
+      `}
       type="button"
     >
       <Icon
-        class="h-6 w-6"
+        class={tw`size-6`}
         src={src}
         alt={alt}
       />

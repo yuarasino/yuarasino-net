@@ -1,4 +1,5 @@
 import { defineComponent } from "../utils/preact.ts";
+import { tw } from "../utils/tailwind.ts";
 
 import type { ComponentProps } from "preact";
 
@@ -13,7 +14,10 @@ export default defineComponent<ImageProps>((
   return (
     <img
       {...props}
-      class={`inline-block ${class_}`}
+      class={tw`
+        inline-block
+        ${class_}
+      `}
       src={src}
       alt={alt}
     />

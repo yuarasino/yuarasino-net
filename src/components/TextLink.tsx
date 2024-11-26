@@ -1,4 +1,5 @@
 import { defineComponent } from "../utils/preact.ts";
+import { tw } from "../utils/tailwind.ts";
 
 import type { ComponentProps } from "preact";
 
@@ -14,7 +15,11 @@ export default defineComponent<TextLinkProps>((
   return (
     <a
       {...props}
-      class={`inline-block uppercase ${class_}`}
+      class={tw`
+        inline-block p-3 uppercase
+        hover:opacity-75
+        ${class_}
+      `}
       href={href}
     >
       <span aria-label={alt}>{label}</span>

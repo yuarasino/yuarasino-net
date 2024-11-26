@@ -1,4 +1,5 @@
 import { defineComponent } from "../utils/preact.ts";
+import { tw } from "../utils/tailwind.ts";
 
 import type { ComponentProps } from "preact";
 
@@ -13,8 +14,11 @@ export default defineComponent<IconProps>((
   return (
     <i
       {...props}
-      class={`icon ${class_}`}
-      style={{ maskImage: `url("${src}")` }}
+      class={tw`
+        inline-block bg-current text-inherit [mask-size:100%_100%]
+        ${class_}
+      `}
+      style={{ maskImage: `url('${src}')` }}
       role="img"
       aria-label={alt}
     />
