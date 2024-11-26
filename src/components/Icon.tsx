@@ -15,7 +15,8 @@ export default defineComponent<IconProps>((
     <i
       {...props}
       class={tw`
-        inline-block bg-current text-inherit [mask-size:100%_100%]
+        inline-block bg-current text-inherit
+        [mask-size:100%_100%]
         ${class_}
       `}
       style={{ maskImage: `url('${src}')` }}

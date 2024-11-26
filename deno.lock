@@ -26,6 +26,7 @@
     "npm:cssnano@6.0.3": "6.0.3_postcss@8.4.35",
     "npm:esbuild-wasm@0.23.1": "0.23.1",
     "npm:esbuild@0.23.1": "0.23.1",
+    "npm:lodash.throttle@^4.1.1": "4.1.1",
     "npm:postcss@8.4.35": "8.4.35",
     "npm:preact-render-to-string@^6.5.11": "6.5.11_preact@10.25.0",
     "npm:preact@^10.24.1": "10.25.0",
@@ -683,6 +684,9 @@
     "lodash.memoize@4.1.2": {
       "integrity": "sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag=="
     },
+    "lodash.throttle@4.1.1": {
+      "integrity": "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+    },
     "lodash.uniq@4.5.0": {
       "integrity": "sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ=="
     },
@@ -1268,6 +1272,7 @@
       "jsr:@fresh/core@^2.0.0-alpha.25",
       "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
       "npm:@preact/signals@^1.3.0",
+      "npm:lodash.throttle@^4.1.1",
       "npm:preact@^10.25.0",
       "npm:tailwindcss@^3.4.15"
     ]

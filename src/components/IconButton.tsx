@@ -16,7 +16,7 @@ export default defineComponent<IconButtonProps>((
     <button
       {...props}
       class={tw`
-        inline-block
+        inline-block p-3
         hover:opacity-75
         ${class_}
       `}

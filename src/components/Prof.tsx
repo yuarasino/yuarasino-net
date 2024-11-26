@@ -1,18 +1,17 @@
 import { defineComponent } from "../utils/preact.ts";
 import { tw } from "../utils/tailwind.ts";
+import Section from "./Section.tsx";
 
 export default defineComponent(() => {
   return (
-    <section
+    <Section
       class={tw`
-        min-h-screen bg-white
-        split:ml-auto split:w-1/2
+        mt-[100vh]
+        split:mt-0
       `}
       id="prof"
     >
-      <div class={tw`mx-auto max-w-screen-clamp pt-16`}>
-        <h2 class={tw`uppercase`}>prof</h2>
-      </div>
-    </section>
+      <h2 class={tw`uppercase`}>prof</h2>
+    </Section>
   );
 });
