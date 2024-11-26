@@ -8,8 +8,8 @@ app.use(trailingSlashes("never"));
 
 await fsRoutes(app, {
   dir: "src/",
-  loadIsland: (path) => import(`./islands/${path}`),
   loadRoute: (path) => import(`./routes/${path}`),
+  loadIsland: (path) => import(`./islands/${path}`),
 });
 
 if (import.meta.main) {

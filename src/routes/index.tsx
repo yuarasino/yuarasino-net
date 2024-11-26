@@ -1,6 +1,9 @@
 import { page } from "fresh";
 import { defineHandlers, definePage } from "../utils/fresh.ts";
-import { tw } from "../utils/tailwind.ts";
+import Prof from "../components/Prof.tsx";
+import News from "../components/News.tsx";
+import Spec from "../components/Spec.tsx";
+import Work from "../components/Work.tsx";
 
 export const handler = defineHandlers({
   GET: ({ state }) => {
@@ -10,11 +13,13 @@ export const handler = defineHandlers({
   },
 });
 
-export default definePage<typeof handler>(({ state }) => {
+export default definePage<typeof handler>(() => {
   return (
-    <main class={tw`min-h-screen pt-16`}>
-      <h1 class={tw`text-primary-500`}>{state.title}</h1>
-      <p class={tw`text-secondary-500`}>{state.description}</p>
+    <main>
+      <Prof />
+      <News />
+      <Spec />
+      <Work />
     </main>
   );
 });
