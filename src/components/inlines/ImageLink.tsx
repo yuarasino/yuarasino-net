@@ -1,14 +1,14 @@
 import { defineComponent } from "~/utils/preact.ts";
 import { tw } from "~/utils/tailwind.ts";
-import Image from "~/components/Image.tsx";
+import Image from "~/components/inlines/Image.tsx";
 
-import type { ComponentProps } from "preact";
+import type { DefineProps } from "~/utils/preact.ts";
 
-export interface ImageLinkProps extends ComponentProps<"a"> {
+export type ImageLinkProps = DefineProps<"a", {
   href: string;
   src: string;
   alt: string;
-}
+}>;
 
 export default defineComponent<ImageLinkProps>((
   { class: class_, href, src, alt, ...props },
@@ -16,11 +16,7 @@ export default defineComponent<ImageLinkProps>((
   return (
     <a
       {...props}
-      class={tw`
-        inline-block p-2
-        hover:opacity-75
-        ${class_}
-      `}
+      class={tw`inline-block hover:opacity-75 ${class_}`}
       href={href}
     >
       <Image

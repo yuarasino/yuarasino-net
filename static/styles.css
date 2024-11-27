@@ -16,10 +16,16 @@
   h4,
   h5,
   h6 {
-    @apply font-mono;
+    @apply font-display tracking-wider;
   }
 
   dialog {
     @apply size-auto;
+  }
+}
+
+@layer utilities {
+  .mask-full {
+    @apply [mask-size:100%_100%];
   }
 }

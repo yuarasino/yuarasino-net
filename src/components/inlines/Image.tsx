@@ -1,12 +1,12 @@
 import { defineComponent } from "~/utils/preact.ts";
 import { tw } from "~/utils/tailwind.ts";
 
-import type { ComponentProps } from "preact";
+import type { DefineProps } from "~/utils/preact.ts";
 
-export interface ImageProps extends ComponentProps<"img"> {
+export type ImageProps = DefineProps<"img", {
   src: string;
   alt: string;
-}
+}>;
 
 export default defineComponent<ImageProps>((
   { class: class_, src, alt, ...props },
@@ -14,10 +14,7 @@ export default defineComponent<ImageProps>((
   return (
     <img
       {...props}
-      class={tw`
-        inline-block
-        ${class_}
-      `}
+      class={tw`inline-block ${class_}`}
       src={src}
       alt={alt}
     />

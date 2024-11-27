@@ -14,6 +14,7 @@ export default defineConfig({
       },
       fontFamily: {
         sans: "'Noto Sans JP', sans-serif",
+        display: "'Noto Sans Display', 'Noto Sans JP', ui-sans-serif",
         mono: "'Noto Sans Mono', 'Noto Sans JP', monospace",
       },
       colors: {

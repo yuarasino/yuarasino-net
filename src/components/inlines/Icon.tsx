@@ -1,12 +1,12 @@
 import { defineComponent } from "~/utils/preact.ts";
 import { tw } from "~/utils/tailwind.ts";
 
-import type { ComponentProps } from "preact";
+import type { DefineProps } from "~/utils/preact.ts";
 
-export interface IconProps extends ComponentProps<"i"> {
+export type IconProps = DefineProps<"i", {
   src: string;
   alt: string;
-}
+}>;
 
 export default defineComponent<IconProps>((
   { class: class_, src, alt, ...props },
@@ -15,8 +15,7 @@ export default defineComponent<IconProps>((
     <i
       {...props}
       class={tw`
-        inline-block bg-current text-inherit
-        [mask-size:100%_100%]
+        inline-block bg-current text-inherit mask-full
         ${class_}
       `}
       style={{ maskImage: `url('${src}')` }}

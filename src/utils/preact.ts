@@ -1,5 +1,12 @@
-import type { FunctionComponent } from "preact";
+import type { FunctionComponent, JSX } from "preact";
 
-export const defineComponent = <Props = Record<string, never>>(
+export type DefineProps<
+  Tag extends keyof JSX.IntrinsicElements,
+  Props = Record<string, never>,
+> = JSX.IntrinsicElements[Tag] & Props;
+
+export const defineComponent = <
+  Props = Record<string, never>,
+>(
   component: FunctionComponent<Props>,
 ): FunctionComponent<Props> => component;
