@@ -1,15 +1,16 @@
 import { defineComponent } from "~/utils/preact.ts";
 import { tw } from "~/utils/tailwind.ts";
-import Section from "~/components/blocks/Section.tsx";
+import Container from "~/components/blocks/Container.tsx";
 
 export default defineComponent(() => {
   return (
-    <Section
-      class={tw`mt-[100vh] split:mt-0`}
+    <section
+      class={tw`mt-screen split:mt-0`}
       id="spec"
-      flip={true}
     >
-      <h2 class={tw`uppercase`}>spec</h2>
-    </Section>
+      <Container flip={true}>
+        <h2 class={tw`uppercase`}>spec</h2>
+      </Container>
+    </section>
   );
 });

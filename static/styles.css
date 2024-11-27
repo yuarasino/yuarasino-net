@@ -25,6 +25,10 @@
 }
 
 @layer utilities {
+  .mt-screen {
+    @apply mt-[100vh];
+  }
+
   .mask-full {
     @apply [mask-size:100%_100%];
   }

@@ -4,7 +4,7 @@ export const tw = (
 ): string => {
   const class_ = String.raw(
     { raw: fragments },
-    ...values.map((value) => value ?? ""),
+    ...values.map((value) => value ? value : ""),
   );
   return class_.trim().replaceAll(/\s+/g, " ");
 };
