@@ -1,7 +1,7 @@
 #!/usr/bin/env -S deno run -A --watch=src/,static/
 import { tailwind } from "@fresh/plugin-tailwind";
 import { Builder } from "fresh/dev";
-import { app } from "./main.ts";
+import { app } from "~/main.ts";
 
 const builder = new Builder();
 tailwind(builder, app);

@@ -1,9 +1,9 @@
 import { createRef } from "preact";
 import { useEffect } from "preact/hooks";
 import throttle from "lodash.throttle";
-import { defineComponent } from "../utils/preact.ts";
-import { tw } from "../utils/tailwind.ts";
-import Image from "../components/Image.tsx";
+import { defineComponent } from "~/utils/preact.ts";
+import { tw } from "~/utils/tailwind.ts";
+import Image from "~/components/Image.tsx";
 
 export default defineComponent(() => {
   const hero = createRef<HTMLElement>();

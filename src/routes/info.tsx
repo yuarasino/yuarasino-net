@@ -1,6 +1,6 @@
 import { page } from "fresh";
-import { defineHandlers, definePage } from "../utils/fresh.ts";
-import { tw } from "../utils/tailwind.ts";
+import { defineHandlers, definePage } from "~/utils/fresh.ts";
+import { tw } from "~/utils/tailwind.ts";
 
 export const handler = defineHandlers({
   GET: ({ state }) => {

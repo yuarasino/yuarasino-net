@@ -1,11 +1,11 @@
 import { createRef } from "preact";
 import { effect } from "@preact/signals";
-import { defineComponent } from "../utils/preact.ts";
-import { tw } from "../utils/tailwind.ts";
-import ImageLink from "../components/ImageLink.tsx";
-import IconButton from "../components/IconButton.tsx";
-import TextLink from "../components/TextLink.tsx";
-import IconLink from "../components/IconLink.tsx";
+import { defineComponent } from "~/utils/preact.ts";
+import { tw } from "~/utils/tailwind.ts";
+import ImageLink from "~/components/ImageLink.tsx";
+import IconButton from "~/components/IconButton.tsx";
+import TextLink from "~/components/TextLink.tsx";
+import IconLink from "~/components/IconLink.tsx";
 
 import type { Signal } from "@preact/signals";
 

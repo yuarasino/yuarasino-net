@@ -1,4 +1,4 @@
-import { definePage } from "../utils/fresh.ts";
+import { definePage } from "~/utils/fresh.ts";
 
 export default definePage(({ Component, state }) => {
   return (

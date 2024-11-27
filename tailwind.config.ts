@@ -1,4 +1,6 @@
-import { defineConfig } from "./src/utils/tailwind.ts";
+import type { Config } from "tailwindcss";
+
+const defineConfig = (config: Config): Config => config;
 
 export default defineConfig({
   content: [

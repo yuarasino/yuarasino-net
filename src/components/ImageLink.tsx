@@ -1,6 +1,6 @@
-import { defineComponent } from "../utils/preact.ts";
-import { tw } from "../utils/tailwind.ts";
-import Image from "./Image.tsx";
+import { defineComponent } from "~/utils/preact.ts";
+import { tw } from "~/utils/tailwind.ts";
+import Image from "~/components/Image.tsx";
 
 import type { ComponentProps } from "preact";
 

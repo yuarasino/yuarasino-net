@@ -1,6 +1,6 @@
-import { defineComponent } from "../utils/preact.ts";
-import { tw } from "../utils/tailwind.ts";
-import Section from "./Section.tsx";
+import { defineComponent } from "~/utils/preact.ts";
+import { tw } from "~/utils/tailwind.ts";
+import Section from "~/components/Section.tsx";
 
 export default defineComponent(() => {
   return (

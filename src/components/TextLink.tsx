@@ -1,5 +1,5 @@
-import { defineComponent } from "../utils/preact.ts";
-import { tw } from "../utils/tailwind.ts";
+import { defineComponent } from "~/utils/preact.ts";
+import { tw } from "~/utils/tailwind.ts";
 
 import type { ComponentProps } from "preact";
 
