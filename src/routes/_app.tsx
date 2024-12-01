@@ -10,9 +10,7 @@ export default definePage(({ Component, state }) => {
         <meta name="description" content={state.description} />
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body>
-        <Component />
-      </body>
+      <Component />
     </html>
   );
 });
