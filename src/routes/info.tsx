@@ -8,8 +8,8 @@ import { Works } from "~/components/sections/home/Works.tsx";
 
 export const handler = defineHandlers({
   GET: ({ state }) => {
-    state.title = "yuarasino.net";
-    state.description = "新篠ゆうのウェブサイト";
+    state.title = "INFO | yuarasino.net";
+    state.description = "INFO | 新篠ゆうのウェブサイト";
     return page();
   },
 });

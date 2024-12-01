@@ -16,7 +16,7 @@ export const Header = defineComponent<HeaderProps>((
   const showMenu = () => menuRef.current?.showModal();
 
   return (
-    <header class="fixed inset-0 z-40">
+    <header class="fixed inset-0 bottom-auto z-40">
       <nav>
         <div
           class={clsx(

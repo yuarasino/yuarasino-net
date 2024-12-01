@@ -65,6 +65,7 @@ export const Dialog = defineComponent<DialogProps>((
                   "hover:opacity-70",
                 )}
                 href={href}
+                onClick={closeMenu}
               >
                 <span class="inline-block uppercase">{label}</span>
               </a>
