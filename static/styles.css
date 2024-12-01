@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  header,
+  dialog,
+  footer,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: theme("fontFamily.display");
+    line-height: 1;
+  }
+
+  dialog {
+    all: unset;
+    display: revert;
+  }
+}
+
+@layer components {
+  .dialog {
+    transform: translate(-100%);
+    transition: display 300ms linear allow-discrete, transform 300ms linear;
+
+    &[open] {
+      transform: translate(0);
+
+      @starting-style {
+        transform: translate(-100%);
+      }
+    }
+  }
+}

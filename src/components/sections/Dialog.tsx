@@ -5,25 +5,23 @@ import { Icon } from "~/components/inlines/Icon.tsx";
 import type { RefObject } from "preact";
 import type { MenuItem } from "~/types.ts";
 
-export type HeaderProps = {
+export type DialogProps = {
   menuRef: RefObject<HTMLDialogElement>;
   menuItems: MenuItem[];
 };
 
-export const Header = defineComponent<HeaderProps>((
+export const Dialog = defineComponent<DialogProps>((
   { menuRef, menuItems },
 ) => {
-  const showMenu = () => menuRef.current?.showModal();
+  const closeMenu = () => menuRef.current?.close();
 
   return (
-    <header class="fixed inset-0 z-40">
+    <dialog
+      class="dialog fixed inset-0 z-50 bg-primary-300 text-white"
+      ref={menuRef}
+    >
       <nav>
-        <div
-          class={clsx(
-            "flex justify-between items-center h-16 px-4",
-            "split:px-8",
-          )}
-        >
+        <div class="flex justify-between items-center h-16 px-4">
           <p>
             <a
               class={clsx(
@@ -31,42 +29,35 @@ export const Header = defineComponent<HeaderProps>((
                 "hover:opacity-85",
               )}
               href="/#top"
+              onClick={closeMenu}
             >
-              <span class="sr-only">新篠ゆうのウェブサイト</span>
               <Image
                 class="h-8 w-auto"
                 src="/images/logo.webp"
-                alt=""
+                alt="新篠ゆうのウェブサイト"
               />
             </a>
           </p>
-          <p
-            class={clsx(
-              "split:hidden",
-            )}
-          >
+          <p>
             <button
               class={clsx(
                 "inline-flex items-center gap-1 p-1",
                 "hover:opacity-70",
               )}
               type="button"
-              onClick={showMenu}
+              onClick={closeMenu}
             >
-              <span class="uppercase">menu</span>
+              <span class="uppercase">close</span>
               <Icon
                 class="size-6"
-                src="/icons/bars.svg"
+                src="/icons/xmark.svg"
                 alt=""
               />
             </button>
           </p>
-          <p
-            class={clsx(
-              "hidden gap-8",
-              "split:flex",
-            )}
-          >
+        </div>
+        <div class="py-8">
+          <p class="flex flex-col items-center gap-8">
             {menuItems.map(({ label, href }) => (
               <a
                 class={clsx(
@@ -81,6 +72,6 @@ export const Header = defineComponent<HeaderProps>((
           </p>
         </div>
       </nav>
-    </header>
+    </dialog>
   );
 });

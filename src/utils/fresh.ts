@@ -1,11 +1,8 @@
 import { createDefine } from "fresh";
 
-export type State = {
-  title?: string;
-  description?: string;
-};
+import type { MetaState } from "~/types.ts";
 
-const define = createDefine<State>();
+const define = createDefine<MetaState>();
 
 export const defineMiddleware = define.middleware;
 
